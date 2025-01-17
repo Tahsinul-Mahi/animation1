@@ -1,0 +1,66 @@
+@keyframes rotate360deg {
+    from{
+        transform:scale(1.)
+    }
+    to{
+        transform: scale(1.5);
+    }
+
+    
+    
+}
+
+
+.container{
+    width: 1140px;
+    margin: 100px auto;
+    padding: 50px;
+}
+
+.container ul{
+    margin: 0;
+    padding: 0;
+}
+
+.container ul li{
+   list-style-type: none;
+   display:inline-block;
+   background-color:darkblue;
+   width: 60px;
+   height:60px;
+   text-align: center;
+   line-height: 60px;
+   border-radius: 5px;
+   border: 1px solid darkblue;
+   margin:0px 5px;
+   transition: 0.5s;
+
+}
+
+.container ul li:hover{
+    background-color:transparent;
+    
+    
+ }
+ .container ul li:hover i{
+   color: darkblue;
+   transform: scaleX(1.3);
+   transform: rotate(40deg);  
+ }
+
+.container ul li a{
+    
+}
+
+.container ul li a i{
+    color: aliceblue;
+    font-size: 25px;
+    animation: rotate360deg 2s linear infinite;
+    
+}
+
+.container ul li a i:hover{ 
+    color:darkblue
+}
+
+
